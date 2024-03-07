@@ -4,7 +4,7 @@
   </a>
 
   <p align="center">
-    As beautiful as a shell<br>
+    I never thought philosophy would be so deadly<br>
     Project minishell of 42 school
     <br />
 	</p>
