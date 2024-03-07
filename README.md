@@ -5,7 +5,7 @@
 
   <p align="center">
     I never thought philosophy would be so deadly<br>
-    Project minishell of 42 school
+    Project philosophers of 42 school
     <br />
 	</p>
 </p>
@@ -19,14 +19,13 @@
 </p>
 
 ## &#x1F4CC; Index 
-- [What is minishell?](#-what-is-minishell)
-- [Features](#-features)
-- [Built-ins](#-built-ins)
-- [Algorithm](#-algorithm)
+- [What is philosophers?](#-what-is-philosophers)
+- [Rules](#-rules)
+- [Set the params](#-set-the-params)
 - [Usage](#-usage)
 - [Examples](#-examples)
 
-## &#x2728; What is minishell?
+## &#x2728; What is philosophers?
 
 This project is a training to multi-threads/multi-process programming with the use of mutex and semaphore.
 It contains N different proccess or threads simulating the famous Dining Philosophers problem, all with the same basic rules.
