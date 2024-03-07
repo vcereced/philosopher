@@ -68,7 +68,9 @@ Optimization is a must to ensure the survival of our philosophers.
 
 ## &#x1F4BB; Usage
 
-`make` to compile.
+`cd philo && make` to compile the executable with threads / mutex.
+
+`cd philo_bonus && make` to compile the executable with process / semaphores.
 
 `make clean` remove .o files.
 
@@ -76,19 +78,30 @@ Optimization is a must to ensure the survival of our philosophers.
 
 ## &#x1F4D6; Examples
 
-Execute this command in the terminal.
-
+The arguments of the executable should be:
 ```bash
-./minishell
+number_of_philosophers time_to_die time_to_eat time_to_sleep [number_of_times_each_philosopher_must_eat]
 ```
 
-Let's try some promps like in a shell:
+Execute whith the arguments in the terminal.
 
 ```bash
-echo "hello world" && cat
+./philo 4 310 200 100
 ```
 
-Output should be:
+Should one philosopher die. Output should be:
+
+<img width="377" alt="Screen Shot 2024-03-07 at 5 37 21 PM" src="https://github.com/vcereced/philosopher/assets/120835200/c7a4e095-354e-4788-a005-05f01977d02d">
+
+Execute the bonus whith the arguments in the terminal.
+
 ```bash
-hello world
+./philo_bonus 4 410 200 100 1
 ```
+ Output should be:
+
+ <img width="377" alt="Screen Shot 2024-03-07 at 5 42 35 PM" src="https://github.com/vcereced/philosopher/assets/120835200/a22b1c3d-adcd-4d59-a1c1-faf567a40e12">
+
+
+
+
