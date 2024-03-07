@@ -39,15 +39,18 @@ Optimization is a must to ensure the survival of our philosophers.
 
 | | |
 |---|---|
-|`n_philos`| philosophers are: `eating`, `thinking` or `sleeping`. |
-|&#x1F354;| The philosophers must never be starving.|
-|&#x1F374;|  arguments or options with `'` and `"` work the same as bash. |
-|`> >> < \| `| Redirections.|
-|`$HOME`| Environment variables. |
-|`$?`| return exit status code. |
-|`Ctrl-C Ctrl-D`| Handling signals. |
-|`&& \|\| `| Decision tree. |
-|`*`| Wildcards. |
+|`n_philos`| N philosophers are: `eating`, `thinking` or `sleeping`. |
+|&#x1F480;| The philosophers must never be starving, they need to eat.|
+|&#x274C;| The simulation stops when a philosopher dies.|
+|&#127869;| While `eating`, they are not `thinking` or `sleeping`. |
+|&#x1F634;| While `sleeping`, they are not `eating` or `thinking`.|
+|&#x1F914;| While `thinking`, they are not `eating` or `sleeping`.|
+|&#x1F374; &#x1F374;| Philosopher must eat with two forks, one for each hand. |
+|&#x1F4AC;| Philosophers don’t speak with each other. |
+|&#x1F4AD;| Philosophers don’t know when another philosopher is about to die. |
+|&#127869;&#x2192;&#x1F374;&#x1F374;&#x2192;&#x1F634;  | Each time a philosopher has finished `eating`, he will drop his forks and start `sleeping`. |
+|&#x1F634;&#x2192;&#x1F914; | When a philosopher is done `sleeping`, he will start `thinking`. |
+|&#x1F914;&#x2192;&#x1F374;&#x1F374;&#x2192;&#127869;  | When a philosopher is done `thinking`, he will take 2 forks to `eating`. |
 
 ## 🕹 Built-ins
 
