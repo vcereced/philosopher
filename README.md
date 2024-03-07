@@ -19,13 +19,12 @@
 </p>
 
 ## &#x1F4CC; Index 
-- [📌 Index](#-index)
-- [✨ What is minishell?](#-what-is-minishell)
-- [🕹 Features](#-features)
-- [🕹 Built-ins](#-built-ins)
-- [🛠 Algorithm](#-algorithm)
-- [💻 Usage](#-usage)
-- [📖 Examples](#-examples)
+- [What is minishell?](#-what-is-minishell)
+- [Features](#-features)
+- [Built-ins](#-built-ins)
+- [Algorithm](#-algorithm)
+- [Usage](#-usage)
+- [Examples](#-examples)
 
 ## &#x2728; What is minishell?
 
@@ -55,7 +54,7 @@ Optimization is a must to ensure the survival of our philosophers.
 |&#x1F634;&#x2192;&#x1F914; | When a philosopher is done `sleeping`, he will start `thinking`. |
 |&#x1F914;&#x2192;&#x1F374;&#x1F374;&#x2192;&#127869;  | When a philosopher is done `thinking`, he will take 2 forks to `eating`. |
 
-## &#x1F6E0; Set the params
+## 🛠 Set the params
 
 | | |
 |---|---|
