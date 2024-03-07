@@ -33,15 +33,18 @@ This project is a training to multi-threads/multi-process programming with the u
 It contains N different proccess or threads simulating the famous Dining Philosophers problem, all with the same basic rules.
 Optimization is a must to ensure the survival of our philosophers.
 
-<img width="331" alt="Screen Shot 2024-03-07 at 1 41 44 PM" src="https://github.com/vcereced/philosopher/assets/120835200/7a70dcc9-6f4a-4286-95dc-51155e994e4b">
+<p align="center">
+  <img width="231" alt="Screen Shot 2024-03-07 at 1 41 44 PM" src="https://github.com/vcereced/philosopher/assets/120835200/7a70dcc9-6f4a-4286-95dc-51155e994e4b">
+</p>
 
 ## 🕹 Rules
 
 | | |
 |---|---|
-|`n_philos`| N philosophers are: `eating`, `thinking` or `sleeping`. |
 |&#x1F480;| The philosophers must never be starving, they need to eat.|
 |&#x274C;| The simulation stops when a philosopher dies.|
+|&#x23F3;| No more than 10 ms between the death and print its death.|
+|&#x1F5A8;| The status printed should not be messed with another philosopher’s status.|
 |&#127869;| While `eating`, they are not `thinking` or `sleeping`. |
 |&#x1F634;| While `sleeping`, they are not `eating` or `thinking`.|
 |&#x1F914;| While `thinking`, they are not `eating` or `sleeping`.|
@@ -52,33 +55,16 @@ Optimization is a must to ensure the survival of our philosophers.
 |&#x1F634;&#x2192;&#x1F914; | When a philosopher is done `sleeping`, he will start `thinking`. |
 |&#x1F914;&#x2192;&#x1F374;&#x1F374;&#x2192;&#127869;  | When a philosopher is done `thinking`, he will take 2 forks to `eating`. |
 
-## 🕹 Built-ins
+## &#x1F6E0; Set the params
 
 | | |
 |---|---|
-|`echo`| `pwd` |
-|`cd`|`env`|
-|`export`| `unset`|
-|`exit`| |
-
-
-## &#x1F6E0; Algorithm
-
-Schema of global logic without decision tree:
-
-<img width="1083" alt="Screen Shot 2024-03-07 at 12 54 56 PM" src="https://github.com/vcereced/minishell/assets/120835200/0076cd0f-1913-4aa1-a34c-54b25db59522">
-
-Parsing logic:
-
-<img width="400" alt="Screen Shot 2024-03-07 at 12 37 29 PM" src="https://github.com/vcereced/minishell/assets/120835200/fdb78bb0-cb6e-4428-9776-2d240cf6616b">
-
-Planner logic:
-
-<img width="600" alt="Screen Shot 2024-03-07 at 12 43 30 PM" src="https://github.com/vcereced/minishell/assets/120835200/b62fdc1d-f211-43c0-86b7-5a7a82cf0023">
-
-Program logic:
-
-<img width="600" alt="Screen Shot 2024-03-07 at 12 50 09 PM" src="https://github.com/vcereced/minishell/assets/120835200/ba77b088-cf5f-4ad0-9adf-05fbe4215a28">
+|`number_of_philosophers`| number of philosophers (process / threads). |
+|`time_to_die`| Miliseconds after starting his last `eating` or start de simulation to die. |
+|`time_to_eat`| Milliseconds will spend to `eating` after take the 2 forks. |
+|`time_to_sleep`| Milliseconds will spend to `sleeping`. |
+|`number_of_times_each_philosopher_must_eat`| [optional]. If all ate at least `number_of_times_each_philosopher_must_eat`, simulation finish. If not specified, simulation continue till someone die.|
+|`number_of_philosophers`| number of philosophers (process / threads). |
 
 
 ## &#x1F4BB; Usage
